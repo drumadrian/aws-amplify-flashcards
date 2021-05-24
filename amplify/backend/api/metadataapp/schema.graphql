@@ -1,0 +1,10 @@
+type ServiceMetadata @model 
+@key(fields: ["id", "sk"])
+{  
+  id: ID!
+  sk: String!
+  service: String!
+  description: String
+  image: String
+  regionsList: [String]
+}

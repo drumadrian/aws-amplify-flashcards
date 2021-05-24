@@ -10,6 +10,11 @@
       "StackName": "amplify-metadataapp-dev-81914",
       "StackId": "arn:aws:cloudformation:us-west-2:544941453660:stack/amplify-metadataapp-dev-81914/67e67620-bca3-11eb-adf8-02f5882a2327",
       "AmplifyAppId": "dwh7i5xdw03kj"
+    },
+    "categories": {
+      "auth": {
+        "metadataappe4a0d06b": {}
+      }
     }
   }
 }
