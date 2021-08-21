@@ -76,24 +76,24 @@ function App() {
 
 function Flashcard({card}) {
 
-  // // Not needed, as <S3Image> takes care of this for us
-  // const [iconUrl, setIconUrl] = useState();
+  // Not needed, as <S3Image> takes care of this for us
+  const [iconUrl, setIconUrl] = useState();
 
-  // useEffect(() => {
-  //   fetchIconUrl()
-  // }, []);
+  useEffect(() => {
+    fetchIconUrl()
+  }, []);
 
-  // async function fetchIconUrl() {
-  //   try {
-  //     const url = await Storage.get(card.image, {
-  //       level: 'public',
-  //       download: false, // defaults to false
-  //       contentType: 'image/svg+xml'
-  //     });
+  async function fetchIconUrl() {
+    try {
+      const url = await Storage.get(card.image, {
+        level: 'public',
+        download: false, // defaults to false
+        contentType: 'image/svg+xml'
+      });
 
-  //     setIconUrl(url);
-  //   } catch (err) { console.log('error fetching icon URL:\n', err) }
-  // }
+      setIconUrl(url);
+    } catch (err) { console.log('error fetching icon URL:\n', err) }
+  }
 
   return (
     <Grid container alignContent='center'>
