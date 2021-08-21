@@ -77,9 +77,9 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
     flexDirection: 'column',
   },
-  fixedHeight: {
-    height: 540,
-  },
+  // fixedHeight: {
+  //   height: 540,
+  // },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
