@@ -97,7 +97,8 @@ function Flashcard({card}) {
 
   return (
     <Grid container alignContent='center'>
-      <Grid item xs={6} md={6} lg={6} >
+      <Grid item xs={2} md={2} lg={2} ></Grid>
+      <Grid item xs={8} md={8} lg={8} >
         <Card>
           <CardHeader
             title={card.service}
