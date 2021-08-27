@@ -22,6 +22,10 @@ import Copyright from './copyright';
 import TopAndSideNavigation from './navigation';
 import useStyles from './material-styles';
 
+import {
+  enable as enableDarkMode,
+} from 'darkreader';
+
 
 function App() {
 
@@ -31,6 +35,11 @@ function App() {
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   useEffect(() => {
+    enableDarkMode({
+      brightness: 100,
+      contrast: 90,
+      sepia: 10,
+    });
     fetchMetadatas()
   }, []);
 
